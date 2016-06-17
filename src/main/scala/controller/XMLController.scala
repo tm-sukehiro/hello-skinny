@@ -21,7 +21,7 @@ class XMLController extends ApplicationController {
     // Cookieに認証情報を入れてAPIをGETする
     val response: Response = HTTP.request(Method.GET, Request("http://localhost:8080/product").header("Cookie", cookies))
 
-    // レスポンスをスクリプティングする
+    // レスポンスをスクレイピングする
     val xml = XML.loadString(response.textBody)
     val name: NodeSeq = xml \\ "@name"
 
