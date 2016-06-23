@@ -6,6 +6,7 @@ import skinny.controller.AssetsController
 object Controllers {
 
   def mount(ctx: ServletContext): Unit = {
+    web.mount(ctx)
     xml.mount(ctx)
     members.mount(ctx)
     root.mount(ctx)
@@ -21,6 +22,10 @@ object Controllers {
 
   object xml extends XMLController with Routes {
     get("/xml/?")(index)
+  }
+
+  object web extends WebController with Routes {
+    get("/web/?")(index)
   }
 
 }

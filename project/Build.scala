@@ -42,7 +42,8 @@ object SkinnyAppBuild extends Build {
       "org.skinny-framework"    %% "skinny-test"          % skinnyVersion   % "test",
       "org.eclipse.jetty"       %  "jetty-webapp"         % jettyVersion    % "container",
       "org.eclipse.jetty"       %  "jetty-plus"           % jettyVersion    % "container",
-      "javax.servlet"           %  "javax.servlet-api"    % "3.1.0"         % "container;provided;test"
+      "javax.servlet"           %  "javax.servlet-api"    % "3.1.0"         % "container;provided;test",
+      "net.sourceforge.nekohtml" % "nekohtml" % "1.9.+"
     ),
     // https://github.com/sbt/sbt/issues/2217
     fullResolvers ~= { _.filterNot(_.name == "jcenter") },
