@@ -22,6 +22,7 @@ object Controllers {
 
   object xml extends XMLController with Routes {
     get("/xml/?")(index)
+    get("/main/?")(main)
   }
 
   object web extends WebController with Routes {

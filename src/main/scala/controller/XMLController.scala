@@ -27,4 +27,9 @@ class XMLController extends ApplicationController {
 
     Ok(name.text, contentType = Some("application/xml"))
   }
+
+  def main = {
+
+    Ok()
+  }
 }
