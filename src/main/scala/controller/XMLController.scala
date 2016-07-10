@@ -30,6 +30,6 @@ class XMLController extends ApplicationController {
 
   def main = {
 
-    Ok()
+    render("/xml/main")
   }
 }
