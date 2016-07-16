@@ -1,6 +1,9 @@
+<div id="left">
 <h3>Hello World!</h3>
 <hr/>
 <p>
     Your first Skinny app works!
 </p>
-
+</div>
+<div id="right">
+</div>
