@@ -31,7 +31,8 @@ object Controllers {
   }
 
   object apiUsers extends ApiUsersController with Routes {
-    get("/v1/users")(index)
+    get("/v1/users")(get)
+    post("/v1/users")(create)
   }
 
 }
